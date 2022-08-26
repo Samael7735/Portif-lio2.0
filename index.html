@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!--FONTES-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="" rel="stylesheet">
+  <!--FONTES-->
+
+  <!--AUDIOS-->
+  <audio id="teste" src="/assets/audio/efeitos sonoros tecnologia/TMFY3A3-trepidation-transition.mp3" hidden></audio>
+  <audio id="zoomMove" src="/assets/audio/efeitos sonoros tecnologia/mixkit-futuristic-zoom-move-2626.wav" hidden></audio>
+  <audio id="optionSelect" src="/assets/audio/efeitos sonoros tecnologia/mixkit-interface-option-select-2573.wav" hidden>option select</audio>
+  <audio id="modernSelect" src="/assets/audio/efeitos sonoros tecnologia/mixkit-modern-technology-select-3124.wav" hidden>modern tecnology select</audio>
+  <audio id="notificationBleep" src="/assets/audio/efeitos sonoros tecnologia/mixkit-high-tech-notification-bleep-2519.wav" hidden>notificação bleep</audio>
+  <audio id="bleepConfirmation" src="/assets/audio/efeitos sonoros tecnologia/mixkit-high-tech-bleep-confirmation-2520.wav" hidden>bleep confirmation</audio>
+  <audio id="bleep" src="/assets/audio/efeitos sonoros tecnologia/mixkit-high-tech-bleep-2521.wav" hidden>bleep</audio>
+  <audio id="zoom" src="/assets/audio/efeitos sonoros tecnologia/mixkit-interface-classic-zoom-2616.wav" hidden>zoom</audio>
+  <audio id="zoomOut" src="/assets/audio/efeitos sonoros tecnologia/mixkit-ui-zoom-out-2619.wav" hidden>zoom out</audio>
+  <audio id="retroConfirmation" src="/assets/audio/efeitos sonoros tecnologia/mixkit-retro-confirmation-tone-2860.wav" hidden>retrô confirmation</audio>
+  <audio id="loadSistem" src="/assets/audio/efeitos sonoros tecnologia/mixkit-sci-fi-loading-operative-system-2529.wav" hidden>loading sistem</audio>
+  <audio id="WelcomeHomeSr" src="/assets/audio/efeitos sonoros tecnologia/welcomeHomeSR.mp3" hidden>loading sistem</audio>
+  <!--AUDIOS-->
+
+  <!--GIFS-->
+  <img id="painelNormal" src="/assets/photos/gifs/ezgif.com-gif-maker.gif" hidden alt="">
+  <img id="painelreverse" src="/assets/photos/gifs/reverse.gif" hidden alt="">
+  <img id="painelcontinuo" src="/assets/photos/gifs/normalandreverse.gif" hidden alt="">
+  <!--GIFS-->
+</head>
+<body>
+  <header>
+    <div  class="UpBar">
+      <h1 class="textUpbar">Samuka.<span>Dev</span></h1>
+      <!--Navegação UpBar-->
+      <div class="navigation">
+          <a href="#home">Inicio</a>
+          <a href="#sobre">sobre</a>
+          <a href="#Psrojetos">Projetos</a>
+          <div class="Menu">
+            <img src="/assets/icons/menu_white_24dp.svg" alt="Menu para mais opções">
+          </div>
+    </div>
+  </header>
+  <main>
+    <video loop autoplay muted class="backgroundAnimated" id="videoDeFundo">
+      <source src="/assets/videos//Nave Espacial - 24564.mp4" type="video/mp4">
+    </video>
+    <div class="contentAbsolute">
+      <div class="teste">
+        <div class="conteinerText text" id="content">
+          <span class="hover">
+            <h1 class="transition text fadeIn">Olá, seja bem vindo!</h1>
+          </span>
+          <span class="hover">
+            <h2 class="transition text fadeIn">este é meu portifólio</h2>
+          </span>
+          <div class="botao fadeIn wrap">
+            <button onclick="testando(), tocaEfeitoSonoro(audios.zoomMove)" class="botaoDescobrir button" id="btn1">
+              <h2 class="transition">Explorar</h2>
+            </button>
+          </div>
+          <div id="BoltCnt">
+            <div class="Bolt heartbeat neon"> 
+              <img onclick="modal2(), tocaEfeitoSonoro(audios.bleep) " id="img1" class="imagem" src="/assets/photos/lindo-gato-astronauta-dibujos-animados-casco_138676-2277.jpg" alt="">
+            </div>
+          </div>
+          <div id="modal" class="modal1 scale-in-center Close">
+            <div class="hover2">
+              <div class="imgCont" id="imgModal">
+                <img onclick="modal(), tocaEfeitoSonoro(audios.bleepConfirmation)" 
+                id="img11" class="imagem"src="/assets/photos/lindo-gato-astronauta-dibujos-animados-casco_138676-2277.jpg" alt="">
+              </div>
+              <div id="BoltName" class="Name">
+                <h3>Will Rock <span>🚀​</span></h3>
+              </div>
+              <div class="textModal" id="mensagem1">
+                <h3>Olá, eu sou o Will!</h3>
+                <h3>
+                  Eu sou o mascote da nave.
+                  Seja bem vindo a bordo! que tal explorar?
+                </h3>
+                <div id="buttonModal">
+                  <button>OK!</button>
+                </div>
+              </div>    
+            </div>
+          </div>
+        </div>
+        <div class="conteinerText text" id="content2">
+          <img id="background" class="" src="/assets/photos/universe-1800258_1920.jpg" alt="">
+          <span  id="span" class="hover">
+            <h1 class="transition text fadeIn">Aqui você pode explorar algumas coisas:</h1>
+          </span>
+          <div id="divMenu" class="divCard">
+            <img onclick="Animation('ContentMenu','scale-in-center', 'scale-out-center'),Animation22('MainContent1','scale-in-center','scale-out-center'), tocaEfeitoSonoro(audios.zoom), togglePlay(audios.WelcomeHomeSr), adicionaClasse(elementos.ContentMenu[0],elementos.ContentMenu[1], elementos.ContentMenu[2] )"
+              class="divCardImage" id="menu" src="assets/photos/360_F_48625577_hZmBiP5I0SV3VtXeawRikKMsuhwl9xFh.jpg" alt="">
+          </div>
+          <div id="ContentMenu" class="ContentCards scale-out-center">
+            <div class="card  ImageHover">
+              <img onclick="tocaEfeitoSonoro(audios.zoom), changeValueOfBotao1()" 
+              class="imageCard" src="/assets/photos/avatar-astronaut-outline-icon-blue-neon-style-signs-symbols-can-be-used-web-logo-mobile-app-ui-ux-black-background-155339574.jpg" alt="">
+            </div>
+            <div class="card ImageHover">
+              <img onclick="changeValueOfBotao2()" class="imageCard" src="/assets/photos/2270853-brilhante-neon-rota-localizacao-icone-isolado-na-parede-de-tijolo-fundo-mapa-ponteiro-sinal-conceito-de-caminho-ou-estrada-gps-navegador-vetor.jpg" alt="">
+            </div>
+            <div class="card ImageHover">
+              <img class="imageCard" src="/assets/photos/glowing-neon-line-document-folder-icon-isolated-vector-29536633.jpg" alt="">
+            </div>
+          </div>
+          <!--CARTAO-->
+            <div id="MainContent1" class="mainContent neon scale-out-center">
+              <video class="videoCntMain" loop autoplay muted src="/assets/videos/futuristic_digital_data_processing_nano2.mp4"></video>
+              <div class="mainInside">
+                <div id="Astronauta" class="astronauta">
+                  <div id="AstronautaName" class="astronautaName">
+                    <div class="cargo">
+                      <h3 id="Cargo" >Engenheiro Front-end</h3>
+                    </div>
+                    <div class="informacoes">
+                      <p id="informacoes" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore impedit qui ipsa natus quos. Quibusdam ipsa temporibus, 
+                        repudiandae voluptate suscipit dolore ducimus expedita voluptatibus totam officiis tempore. 
+                        Minima, odit minus?</p>    
+                    </div>
+                    <div>
+                      <h3 id="tecnologias">Tecnologias:</h3>
+                    </div>
+                    <div class="tecnologias">
+                      <div id="tecnologiasFotos" class="imageTecnologia">
+                        <span class="contentImageTech"><img src="/assets/icons/iconsTecnologias/glowing-neon-line-html-file-document-download-html-button-icon-isolated-on-black-background-html-file-symbol-markup-language-symbol-colorful-outline-concept-vector-700-263385004.jpg" alt=""></span>
+                        <span class="contentImageTech"><img src="/assets/icons/iconsTecnologias/glowing-neon-line-books-about-programming-icon-isolated-on-black-background-programming-language-concept-php-css-xml-html-javascript-learning-vector-700-255610191.jpg" alt=""></span>
+                        <span class="contentImageTech"><img src="/assets/icons/iconsTecnologias/glowing-neon-line-js-file-document-download-js-button-icon-isolated-black-background-js-file-symbol-colorful-outline-concept-215043990.jpg" alt=""></span>
+                        <span class="contentImageTech"><img src="/assets/icons/iconsTecnologias/093ewdrgyf1kedlhzs51.png" alt=""></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="AstronautaPerfil" class="astronautaPerfil">
+                  <div class="profile">
+                    <div class="contentPhoto">
+                      <div class="contentPhotoLimiter">
+                        <img id="Samuk" src="/assets/photos/profile.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="infoSamuk text" > 
+                    <h3>Samuel Sena</h3>
+                    <div class="apresentacao">
+                      <h4>
+                        Desenvolvedor Front-end
+                      </h4>
+                    </div>
+                    <div class="habilidades text">
+                     <h4>Busco me aprimorar ao máximo
+                      no desenvolvimento de interfaces.
+                     </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="main.js"></script>
+</body>
+</html>
