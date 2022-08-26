@@ -4,29 +4,13 @@
   box-sizing: border-box;
 }
 :root{
-  /*Cores*/
+  /*Cores*/ /*Firs comit*/
   --hue:306;
   --colorBorder:#00F3FF;
   --text-color: rgb(214, 209, 209);
   --text-color-light: rgba(255, 255, 255, 0.953);
   --text2-color: #121214;
 }
-  /*Cores*/
-
-  /*<div class="card">
-            <h2 class="text textCard fadeIn">Olá Seja muito bem vindo(a).</h2>
-            <h3 class="text textCard fadeIn">Que tal ver o que há de novo por aqui?</h3>
-        </div>*/
-
-        /*
-        main .card {
-  background: rgba( 255, 255, 255, 0.35 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 6px );
-  -webkit-backdrop-filter: blur( 13.5px );
-
-          */
-
 html{
   font-size: 60%;
 }
