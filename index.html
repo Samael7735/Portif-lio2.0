@@ -72,11 +72,10 @@
               <img onclick="modal2(), tocaEfeitoSonoro(audios.bleep) " id="img1" class="imagem" src="/assets/photos/lindo-gato-astronauta-dibujos-animados-casco_138676-2277.jpg" alt="">
             </div>
           </div>
-          <div id="modal" class="modal1 scale-in-center Close">
+          <div id="modal" class="modal1 scale-in-center Close neonBorder">
             <div class="hover2">
               <div class="imgCont" id="imgModal">
-                <img onclick="modal(), tocaEfeitoSonoro(audios.bleepConfirmation)" 
-                id="img11" class="imagem"src="/assets/photos/lindo-gato-astronauta-dibujos-animados-casco_138676-2277.jpg" alt="">
+                <img id="img11" class="imagem"src="/assets/photos/lindo-gato-astronauta-dibujos-animados-casco_138676-2277.jpg" alt="">
               </div>
               <div id="BoltName" class="Name">
                 <h3>Will Rock <span>🚀​</span></h3>
@@ -88,7 +87,7 @@
                   Seja bem vindo a bordo! que tal explorar?
                 </h3>
                 <div id="buttonModal">
-                  <button>OK!</button>
+                  <button onclick="modal(), tocaEfeitoSonoro(audios.bleepConfirmation)">OK!</button>
                 </div>
               </div>    
             </div>
@@ -100,28 +99,28 @@
             <h1 class="transition text fadeIn">Aqui você pode explorar algumas coisas:</h1>
           </span>
           <div id="divMenu" class="divCard">
-            <img onclick="Animation('ContentMenu','scale-in-center', 'scale-out-center'),Animation22('MainContent1','scale-in-center','scale-out-center'), tocaEfeitoSonoro(audios.zoom), togglePlay(audios.WelcomeHomeSr), adicionaClasse(elementos.ContentMenu[0],elementos.ContentMenu[1], elementos.ContentMenu[2] )"
+            <img onclick="Animation('ContentMenu','scale-in-center', 'scale-out-center'),Animation22('MainContent1','scale-in-center','scale-out-center'), tocaEfeitoSonoro(audios.zoomOut), togglePlay(audios.WelcomeHomeSr), adicionaClasse(elementos.ContentMenu[0],elementos.ContentMenu[1], elementos.ContentMenu[2] )"
               class="divCardImage" id="menu" src="assets/photos/360_F_48625577_hZmBiP5I0SV3VtXeawRikKMsuhwl9xFh.jpg" alt="">
           </div>
-          <div id="ContentMenu" class="ContentCards scale-out-center">
+          <div id="ContentMenu" class="ContentCards scale-out-center neonBorder">
             <div class="card  ImageHover">
-              <img onclick="tocaEfeitoSonoro(audios.zoom), changeValueOfBotao1()" 
+              <img onmouseover="tocaEfeitoSonoro(audios.modernSelect)" onclick="tocaEfeitoSonoro(audios.zoomOut), changeValueOfBotao1()" 
               class="imageCard" src="/assets/photos/avatar-astronaut-outline-icon-blue-neon-style-signs-symbols-can-be-used-web-logo-mobile-app-ui-ux-black-background-155339574.jpg" alt="">
             </div>
             <div class="card ImageHover">
-              <img onclick="changeValueOfBotao2()" class="imageCard" src="/assets/photos/2270853-brilhante-neon-rota-localizacao-icone-isolado-na-parede-de-tijolo-fundo-mapa-ponteiro-sinal-conceito-de-caminho-ou-estrada-gps-navegador-vetor.jpg" alt="">
+              <img onmouseover="tocaEfeitoSonoro(audios.modernSelect)" onclick="changeValueOfBotao2(), tocaEfeitoSonoro(audios.zoomOut)" class="imageCard" src="/assets/photos/2270853-brilhante-neon-rota-localizacao-icone-isolado-na-parede-de-tijolo-fundo-mapa-ponteiro-sinal-conceito-de-caminho-ou-estrada-gps-navegador-vetor.jpg" alt="">
             </div>
             <div class="card ImageHover">
-              <img class="imageCard" src="/assets/photos/glowing-neon-line-document-folder-icon-isolated-vector-29536633.jpg" alt="">
+              <img onmouseover="tocaEfeitoSonoro(audios.modernSelect)" onclick="changeValueOfBotao3(), tocaEfeitoSonoro(audios.zoomOut)" class="imageCard" src="/assets/photos/glowing-neon-line-document-folder-icon-isolated-vector-29536633.jpg" alt="">
             </div>
           </div>
           <!--CARTAO-->
-            <div id="MainContent1" class="mainContent neon scale-out-center">
+            <div id="MainContent1" class="mainContent neon scale-out-center neonBorder">
               <div class="mainInside">
                 <div id="Astronauta" class="astronauta">
                   <div id="AstronautaName" class="astronautaName">
                     <div class="cargo">
-                      <h3 id="Cargo" >Engenheiro Front-end</h3>
+                      <h3 id="Cargo">Desenvolvedor Front End</h3>
                     </div>
                     <div class="informacoes">
                       <p id="informacoes" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore impedit qui ipsa natus quos. Quibusdam ipsa temporibus, 
@@ -129,7 +128,7 @@
                         Minima, odit minus?</p>    
                     </div>
                     <div>
-                      <h3 id="tecnologias">Tecnologias:</h3>
+                      <h3 id="tecnologias">Habilidades:</h3>
                     </div>
                     <div class="tecnologias">
                       <div id="tecnologiasFotos" class="imageTecnologia">
@@ -140,29 +139,14 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div id="AstronautaPerfil" class="astronautaPerfil">
-                  <div class="profile">
-                    <div class="contentPhoto">
-                      <div class="contentPhotoLimiter">
-                        <img id="Samuk" src="/assets/photos/profile.jpg" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="infoSamuk text" > 
-                    <h3>Samuel Sena</h3>
-                    <div class="apresentacao">
-                      <h4>
-                        Desenvolvedor Front-end
-                      </h4>
-                    </div>
-                    <div class="habilidades text">
-                     <h4>Busco me aprimorar ao máximo
-                      no desenvolvimento de interfaces.
-                     </h4>
-                    </div>
+                  <h2 id="titulo" class="Tittle fechar">Amostras de Projetos:</h2>
+                  <div id="projetos" class="projetos fechar">
+                    <div class="projeto1"></div>
+                    <div class="projeto2"></div>
+                    <div class="projeto3"></div>
                   </div>
                 </div>
+                <div id="AstronautaPerfil" class="astronautaPerfil"></div>
               </div>
             </div>
         </div>

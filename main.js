@@ -94,6 +94,8 @@ let tecnologias = document.getElementById('tecnologias')
 let tecnologiasFotos = document.getElementById('tecnologiasFotos')
 let AstronautaPerfil = document.getElementById('AstronautaPerfil')
 let Astronauta = document.getElementById('Astronauta')
+let projetos = document.getElementById('projetos')
+let titulo = document.getElementById('titulo')
 
 let botao1 = false
 let botao2 = false
@@ -103,23 +105,48 @@ function changeValueOfBotao1(){
   botao1 = true
   changeMain()
   if(botao1 = true){
-    cargo.innerHTML = "AAAAAAAAAAAAAAAAA"
+    cargo.innerHTML = "Desenvolvedor Front End"
     informacoes.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore impedit qui ipsa natus quos. Quibusdam ipsa temporibus, repudiandae voluptate suscipit dolore ducimus expedita voluptatibus totam officiis tempore. Minima, odit minus?"
-    tecnologias.innerHTML = "to aprendendoooo"
+    tecnologias.innerHTML = "Habilidades:"
     AstronautaPerfil.classList.remove('fechar')
     Astronauta.classList.remove('botao2Action')
+    titulo.classList.add('fechar')
+    informacoes.classList.remove('fechar')
+    tecnologias.classList.remove('fechar')
+    tecnologiasFotos.classList.remove('fechar')
+    projetos.classList.add('fechar')
   }
 }
-
 function changeValueOfBotao2(){
   botao2 = true
   changeMain()
   if(botao2 = true){
+    titulo.classList.add('fechar')
+    cargo.classList.remove('fechar')
     cargo.innerHTML = "Engenheiro Front-end"
     informacoes.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore impedit qui ipsa natus quos. Quibusdam ipsa temporibus, repudiandae voluptate suscipit dolore ducimus expedita voluptatibus totam officiis tempore. Minima, odit minus?"
     tecnologias.innerHTML = "to aprendendoooo"
     AstronautaPerfil.classList.add('fechar')
     Astronauta.classList.add('botao2Action')
+    projetos.classList.add('fechar')
+    informacoes.classList.remove('fechar')
+    tecnologias.classList.remove('fechar')
+    tecnologiasFotos.classList.remove('fechar')
+  }
+}
+function changeValueOfBotao3(){
+  botao2 = true
+  changeMain()
+  if(botao2 = true){
+    cargo.classList.add('fechar')
+    cargo.classList.add('positionTittle')
+    informacoes.classList.add('fechar')
+    tecnologias.classList.add('fechar')
+    tecnologiasFotos.classList.add('fechar')
+    AstronautaPerfil.classList.add('fechar')
+    Astronauta.classList.add('botao2Action')
+    projetos.classList.remove('fechar')
+    titulo.classList.remove('fechar')
   }
 }
 //Verifica se os itens são verdadeiros e caso sejam, setam para false, deixando apenas 1 como verdadeiro
