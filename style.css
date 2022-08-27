@@ -683,11 +683,6 @@ to {
     0 0 60px rgba(0, 243, 255, .7);
 }
 }
-/*Main Image*/
-main .videoCntMain{
-  height: 100%;
-  width: auto;
-}
 /*main Content Inside*/
 main .mainInside{
   height: 100%;
