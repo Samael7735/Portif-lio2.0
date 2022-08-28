@@ -12,10 +12,11 @@
   --text2-color: #121214;
 }
 html{
-  font-size: 60%;
+  font-size: 100%;
 }
 body{
   background-size: cover;
+  position: fixed;
 }
 #content2{
   z-index:0;
@@ -59,7 +60,7 @@ header .UpBar h1{
 header .UpBar .textUpbar {
   color: var(--text-color-light);
   font-family: 'Poppins', sans-serif;
-  font-size: 3.5rem;
+  font-size: 2rem;
 }
 /*Text Upbar span style*/
 header .UpBar h1 span{
@@ -75,7 +76,7 @@ header .UpBar .navigation{
 header .UpBar .navigation a {
  color:var(--text-color-light);
  font-family: 'Poppins', sans-serif;
- font-size: 2rem;
+ font-size: 1.5rem;
  margin-left: 10%;
  content: contain;
  text-decoration: none;
@@ -132,17 +133,16 @@ main .conteinerText{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-style: groove;
   position: relative;
 }
 main .conteinerText span h1{
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: bolder;
   color: var(--text-color);
   box-sizing: border-box;
 }
 main .conteinerText span h2{
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: bolder;
   color: var(--text-color);
   box-sizing: border-box;
@@ -151,7 +151,7 @@ main .conteinerText span h2{
 main .hover :hover{
   color: var(--text-color-light);
   font-weight: 900;
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 /*Transição*/
 .transition {
@@ -172,7 +172,7 @@ main .hover :hover{
   min-width: 300px;
   min-height: 60px;
   font-family: 'Poppins', sans-serif;
-  font-size: 22px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1.3px;
   font-weight: 700;
@@ -247,7 +247,6 @@ main .hover :hover{
   left: -50%;
   animation-duration: 3s;
   animation-name: slidein;
-
 }
 .teste2{
   left: -50%;
@@ -326,19 +325,19 @@ main .hover :hover{
 .Name{
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 2.8em;
+  font-size: 2rem;
   font-weight: 800;
   color: var(--text-color-light);
 }
 .modal1 .textModal h3{
   font-family: 'Poppins', sans-serif;
-  font-size: 2.4em;
+  font-size: 1.5rem;
   color: #00FFCB;
 }
 .modal1 .textModal h3{
   margin-top: 5%;
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5em;
+  font-size: 1.5rem;
   color: var(--text-color-light)
 }
 /*botao do modal*/
@@ -353,7 +352,7 @@ main .hover :hover{
   width: 80%;
   height: 100%;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: var(--text-color-light);
   background-color:#121214;
   border-radius: 10px;
@@ -456,7 +455,6 @@ from {
           animation-timing-function: ease-out;
 }
 }
-
 /*ação do modal*/
 .Close{
   display: none;
@@ -550,7 +548,7 @@ main .ContentCards{
   align-items: center;
   justify-content: center;
   position: relative;
-  right: 27%;
+  right: 26%;
   top: 1%;
   background-color: #121214;
   border-radius: 10px;
@@ -685,13 +683,13 @@ main .cargo{
 main .cargo h3{
   color: var(--text-color-light);
   font-family: 'Poppins', sans-serif;
-  font-size: 3.5rem;
+  font-size: 2rem;
 }
 main .informacoes{
   margin-top: 2%;
   color: var(--text-color-light);
   font-family: 'Poppins', sans-serif;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
 }
 main .tecnologias{
   height: 20%;
@@ -699,7 +697,7 @@ main .tecnologias{
 #tecnologias{
   color: var(--text-color-light);
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-top: 5%;
 }
 main .imageTecnologia{
@@ -753,7 +751,7 @@ main .botao2Action{
 main .Tittle{
   color: var(--text-color-light);
   font-family: 'Poppins', sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
 }
 main .projetos{
@@ -795,3 +793,11 @@ main .projeto3{
   0 0 20px rgba(0, 243, 255, .7),
   0 0 60px rgba(0, 243, 255, .7);
 }
+/*Projetos*/
+main .contentImagemProjeto{
+  overflow: hidden;
+  background-image: url(/assets/photos/cracháImage.jpeg);
+  background-size: cover;
+  background-position-x: center;
+}
+

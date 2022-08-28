@@ -105,6 +105,7 @@ function changeValueOfBotao1(){
   botao1 = true
   changeMain()
   if(botao1 = true){
+    cargo.classList.remove('fechar')
     cargo.innerHTML = "Desenvolvedor Front End"
     informacoes.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore impedit qui ipsa natus quos. Quibusdam ipsa temporibus, repudiandae voluptate suscipit dolore ducimus expedita voluptatibus totam officiis tempore. Minima, odit minus?"
     tecnologias.innerHTML = "Habilidades:"
@@ -165,6 +166,12 @@ function changeMain(componente1,componente2,componente3,componente4,componente5)
     botao2 = false
     console.log('dentro do terceiro if', botao1, botao2)
   }
+}
+//abrir links dos projetos
+let projeto1 = 'https://samuelsenadev.netlify.app'
+
+function abreProjeto(projeto){
+  window.open(projeto,'_blank')
 }
 
 
