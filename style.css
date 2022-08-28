@@ -115,8 +115,9 @@ main{
   background: cover;
 }
 main .backgroundAnimated{
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill; /*Faz com que o video se ajuste automaticamente ao tamanho da tela*/
 }
 main .contentAbsolute{
   position: absolute;
