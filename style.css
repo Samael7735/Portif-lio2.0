@@ -29,6 +29,8 @@ body{
   background-size: cover;
   z-index: 0;
   position: absolute; 
+  height: 100%;
+  width: 100%;
 }
 @keyframes fadein2 {
   from { opacity: 0; }
@@ -114,7 +116,7 @@ main{
 }
 main .backgroundAnimated{
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 main .contentAbsolute{
   position: absolute;
