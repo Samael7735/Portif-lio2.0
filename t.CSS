@@ -1,0 +1,8 @@
+.button {
+  min-width: 50%;
+  min-height: 30%;
+}
+#btn1::before {
+  min-width: 50%;
+  min-height: 30%;
+}

@@ -52,6 +52,7 @@ header .UpBar{
   display: flex;
   align-items: center;
   height: 8vh;
+  gap:38%;
 }
 /*UP bar items*/
 header .UpBar h1{
@@ -70,16 +71,14 @@ header .UpBar h1 span{
 }
 /*Navigation e Alinhamento*/
 header .UpBar .navigation{
-  margin-left: 40%;
-  margin-right: 30%;
   display: flex;
   align-items: center;
+  gap: 10%;
 }
 header .UpBar .navigation a {
  color:var(--text-color-light);
  font-family: 'Poppins', sans-serif;
  font-size: 1.5rem;
- margin-left: 10%;
  content: contain;
  text-decoration: none;
 }
@@ -88,14 +87,8 @@ header .UpBar .navigation a:hover{
   color: #ffa500;
 }
 /*Vanvigation Icon Style*/
-header .UpBar .navigation .Menu{
-  margin-left: 10%;
-}
 header .UpBar .navigation .Menu img{
   height: 3.5vh;
-}
-header .UpBar .navigation .Menu img:hover{
-  background-color: var(--colorBorder);
 }
 /*MAIN*/
 #span{
@@ -803,4 +796,92 @@ main .contentImagemProjeto{
   background-size: cover;
   background-position-x: center;
 }
+@media ( max-width: 1193px), (min-width: 1024){
+  html{
+    font-size: 80%;
+  }
+  header .UpBar{
+    gap: 30%;
+  }
+  header .UpBar .navigation{
+    gap: 10%;
+  }
+  header .UpBar .textUpbar {
+    font-size: 2.5rem;
+  }
+  header .UpBar h1{
+    margin-left: 15%;
+    margin-top: 0;
+  }
+  #site{
+    font-size: 2.5rem;
+  }
+  header .UpBar .navigation a { 
+    font-size: 2rem;
+  }
+  main .conteinerText span h1{
+    font-size: 2.8rem;
+  }
+  main .conteinerText span h2{
+    font-size: 2.8rem;
+    margin-top: 15px;
+  }
+  #explorar{
+    font-size: 2rem;
+  }
+  /*MODAL*/
+  .modal1{
+    position: absolute;
+    height: 70%;
+    width: 20%;
+    right: 5%;
+    top: 25%;
+    overflow: hidden;
+  }
+  .modal1 .imgCont{
+    height: 50%;
+    width: 100%;
+  }
+  #img11{
+    width: 40%;
+    height: 40%;
+  }
+}
+
+/**/
+@media ( max-width: 935px){
+  html{
+    font-size: 80%;
+  }
+  header .UpBar{
+    gap: 25%;
+  }
+  header .UpBar .navigation{
+    gap: 10%;
+  }
+  header .UpBar .textUpbar {
+    font-size: 2.5rem;
+  }
+  header .UpBar h1{
+    margin-left: 10%;
+    margin-top: 0;
+  }
+  #site{
+    font-size: 2rem;
+  }
+  header .UpBar .navigation a { 
+    font-size: 1.5rem;
+  }
+  main .conteinerText span h1{
+    font-size: 2.8rem;
+  }
+  main .conteinerText span h2{
+    font-size: 2.8rem;
+    margin-top: 15px;
+  }
+  #explorar{
+    font-size: 2rem;
+  }
+}
+
 
